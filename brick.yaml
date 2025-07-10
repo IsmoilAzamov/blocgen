@@ -1,0 +1,36 @@
+name: blocgen
+description: A Mason brick for generating BLoC pattern files (Bloc, Event, State)
+version: 0.1.0+1
+publish_to: https://pub.dev
+vars:
+  package_name:
+    type: string
+    default: tvo_uz
+  entity_name:
+    type: string
+    description: Entity name (e.g., Category, Product)
+    prompt: Entity nomi nima? (masalan Category)
+  has_get_list:
+    type: boolean
+    description: GetList metodi kerakmi?
+    default: true
+  has_get_by_id:
+    type: boolean
+    description: GetById metodi kerakmi?
+    default: true
+  has_create:
+    type: boolean
+    description: Create metodi kerakmi?
+    default: false
+  has_update:
+    type: boolean
+    description: Update metodi kerakmi?
+    default: false
+  has_delete:
+    type: boolean
+    description: Delete metodi kerakmi?
+    default: false
+  has_search:
+    type: boolean
+    description: Search metodi kerakmi?
+    default: false
